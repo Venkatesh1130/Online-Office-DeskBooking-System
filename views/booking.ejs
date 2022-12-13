@@ -1,0 +1,26 @@
+
+<%- include("partials/navbar") -%>
+
+<div  class="Main-container">
+<% SeatArr.forEach(function(seat){ %>
+    
+    <div class="workplace-container" style="position:absolute;left:<%= seat.left %>px;top:<%= seat.right %>px">
+        <form action="/booking" method="post">
+            
+            <img src="workplace.png"  class="workplace_img" alt="Desk" name="seatid" >
+            <br>
+            <h5><%= seat._id %></h5>
+            <%if(seat.status===0){%>
+                <input type="checkbox" name="seatid" value="<%= seat._id%>" onchange="this.form.submit()">
+            <%}else{%>
+                <input type="checkbox" name="seatid" value="<%= seat._id%>" onchange="this.form.submit()" disabled="disabled">
+            <%}%>
+            
+        
+        </form>
+    </div>
+    
+<%})%>
+</div>
+
+<%- include("partials/footer") -%>

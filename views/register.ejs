@@ -1,0 +1,14 @@
+<%- include("partials/header")-%>
+<h1>Register</h1>
+    <form action="/register" method="post">
+        <div class="form-signin">
+            <label for="">Name</label>
+        <input type="text" class="form-control " name="name" placeholder="Name" required autofocus>
+        <label for="">Username</label>
+        <input type="email" class="form-control " name="username" placeholder="Email-address" required>
+        <label for="">Password</label>
+        <input type="password" class="form-control " name="password" placeholder="Password" required>
+        <button type="submit" class="btn btn-lg btn-primary">submit</button>
+    </div>
+    </form>
+<%- include("partials/footer")-%>

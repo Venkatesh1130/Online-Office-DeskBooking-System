@@ -1,0 +1,62 @@
+body{
+    box-sizing: border-box;
+}
+
+.workplace_img{
+    height: 40px;
+}
+/* 
+.btn{
+    all:unset
+} */
+
+h1{
+    text-align: center;
+}
+
+.workplace-container{
+    display: inline-block;
+    margin: 20px 20px;
+
+}
+h5{
+    all: unset;
+}
+
+.nav-item{
+    padding: 2%;
+    
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+.Main-container{
+    position:relative;
+    width: 400px; 
+    height:400px ;
+    margin: 20px;
+
+    border: solid black 2px;
+    
+}
+
+footer{
+    position: fixed;
+    
+    bottom: 0;
+    text-align: center;
+    margin: auto 0 auto 0;
+    /* margin-top: 200px; */
+}
+
+.form-signin{
+    width: 20%;
+    margin: auto;
+    
+}
+
+.btn{
+    margin-top: 10px;
+}

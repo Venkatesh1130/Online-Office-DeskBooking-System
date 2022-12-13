@@ -1,0 +1,17 @@
+<%- include("partials/header")-%>
+<h1>Seat Management</h1>
+<form action="/seat_manage" method="post">
+    <div class="form-signin">
+        <label for="">Seat ID</label>
+    <input type="number" class="form-control" name="_id" placeholder="Seat ID">
+    <label for="">Top Position</label>
+    <input type="number" class="form-control" name="right" placeholder="Top px">
+    <label for="">Left Position</label>
+    <input type="number" class="form-control" name="left" placeholder="Left px">
+    <label for="">Status(Default 0 not Occupied)</label>
+    <input type="number" class="form-control" name="status" placeholder="Status(0/1)">
+    <button type="submit" class="btn  btn-dark">Add</button>
+    </div>
+    
+</form>
+<%- include("partials/footer")-%>
